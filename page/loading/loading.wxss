@@ -1,23 +1,23 @@
-#exit{
+#exit {
   width: 100%;
   height: 100%;
-  
 }
-#adver{
+
+#adver {
   width: 100%;
   height: 99%;
 }
-.logo{
-  width:350rpx;
-height:350rpx;
-margin-top:200rpx;
 
+.logo {
+  width: 350rpx;
+  height: 350rpx;
+  margin-top: 200rpx;
 }
-.bindphone{
-  width:200rpx;
-border:none;
-background:#ff8920;
-border-style:1px solid #ff8920;
-color:white;
 
+.bindphone {
+  width: 250rpx;
+  background: #ff8920;
+  border: none;
+  color: white;
 }
+

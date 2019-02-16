@@ -16,6 +16,9 @@ page {
 	overflow: hidden;
 }
 
+button::after{
+  border: none;
+}
 /*特殊按钮*/
 button.yellow {
 	color: #fff;
