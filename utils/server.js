@@ -12,7 +12,7 @@ function __args() {
 		}
 	}
 	if (setting.url.indexOf('https://') !== 0) {
-		setting.url = 'https://kd.surebetter.cn' + setting.url;
+		setting.url = 'https://waimai.c3w.cc' + setting.url;
 	}
 	return setting;
 }

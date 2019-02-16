@@ -27,6 +27,7 @@
         </view>
       </swiper-item>
     </swiper>
+
     <view id="nearby" class="section section-big nearby">
       <view class="title">附近商家</view>
       <view class="filters">
@@ -40,11 +41,13 @@
           <text class="v">↓</text>
         </view>
       </view>
-      <view class="shop" wx:for="{{shops}}" wx:key="id">
+
+      <!-- <view class="shop" wx:for="{{shops}}" wx:key="id">
         <navigator url="/page/shop/shop?id={{item.id}}">
           <image src="{{item.img}}" />
         </navigator>
-      </view>
+      </view> -->
+      
       <navigator url="/page/shop/shop?id=1" class="split-h" style=" overflow: hidden;position:relative">
         <text style="position: absolute; color: #6b450a;background: #fdd943;   transform: rotate(-45deg);font-size:10pt;margin-top:-30px;margin-left:-22px;width:60px;height:30px;text-align: center;line-height:45px;  ">品牌</text>
         <image src="http://p0.meituan.net/0.120.100/xianfu/d19a01f08e2f241ae5b1151d3def25427985.jpeg" style="width:94px;height:74px"></image>

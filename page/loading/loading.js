@@ -10,7 +10,7 @@ Page({
   },
   onShow:function(){
     var that = this;
-    console.log('loading...');
+   
     // 页面显示
    setTimeout(function(){
     wx.redirectTo({

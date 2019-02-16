@@ -18,7 +18,7 @@ Page({
 					latitude: latitude,
 					longitude: longitude
 				}, function (res) {
-					console.log(res)
+				
 					if (res.data.status != -1) {
 						self.setData({
 							address: res.data.result.address_component.street_number
