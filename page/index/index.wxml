@@ -76,7 +76,7 @@
             <text style="font-size:10pt;color:#656565">33分钟</text>
           </view>
           <view class="">
-            <text class="allocation">美团专送</text>
+            <text class="allocation">百校专送</text>
           </view>
         </view>
       </navigator>

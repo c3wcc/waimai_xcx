@@ -12,11 +12,11 @@ Page({
     var that = this;
    
     // 页面显示
-   setTimeout(function(){
-    wx.redirectTo({
-      url: '/page/ad/ad'
-    })
-   },1000)
+  //  setTimeout(function(){
+  //   wx.redirectTo({
+  //     url: '/page/ad/ad'
+  //   })
+  //  },1000)
      
   },
 })

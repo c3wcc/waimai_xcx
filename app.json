@@ -1,13 +1,13 @@
 {
 	"debug": true,
 	"pages": [
+    "page/loading/loading",
 		"page/index/index",
 		"page/index/search",
     "page/list/list",
 		"page/shop/shop",
 		"page/mine/mine",
 
-    "page/loading/loading",
     "page/ad/ad"
 	],
 	"window": {
