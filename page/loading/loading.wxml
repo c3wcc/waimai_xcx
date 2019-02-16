@@ -1,7 +1,7 @@
-<view id="exit">
+<view id="exit" style='text-align:center'>
   <!-- <image id="adver" src="{{picture}}"></image> -->
 
-
+<image class='logo' src='{{logo}}'></image>
   <button class='bindphone' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">微信登录</button>
 
 </view>
