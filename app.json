@@ -11,11 +11,11 @@
     "page/ad/ad"
 	],
 	"window": {
-		"navigationBarBackgroundColor": "#feb70f",
+		"navigationBarBackgroundColor": "#ff5801",
 		"navigationBarTextStyle": "white",
 		"backgroundColor": "#efefef",
 		"backgroundTextStyle": "dark",
-		"navigationBarTitleText": "外卖订餐"
+		"navigationBarTitleText": "百校外卖"
 	},
 	"tabBar": {
 		"color": "#878787",

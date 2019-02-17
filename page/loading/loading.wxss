@@ -16,7 +16,7 @@
 
 .bindphone {
   width: 250rpx;
-  background: #ff8920;
+  background: #ff5801;
   border: none;
   color: white;
 }

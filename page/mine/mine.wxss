@@ -1,5 +1,5 @@
 .header {
-	background: #feb70f;
+	background: #ff5801;
 	padding: 30rpx;
 }
 .header .avatar {

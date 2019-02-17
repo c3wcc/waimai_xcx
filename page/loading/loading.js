@@ -1,6 +1,5 @@
 Page({
   data:{
-    picture:"/images/1.jpg",
     logo:"/images/logo.png",
   },
   onLoad:function(options){
