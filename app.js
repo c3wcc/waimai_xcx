@@ -8,20 +8,20 @@ App({
     wx.login({
       success: function (res) {
         server.getJSON('/api/user/login_by_code', { code: res.code }, function (res) {
-          console.log(res.data);
+
           wx.setStorageSync('token', res.data.data.token);
           self.globalData.userInfo = res.data.data;
-          
+
           cb && cb(res.data.data)
 
         });
       }
     });
   },
- 
+
   globalData: {
-    openid:null,
-    userInfo:[],
+    openid: null,
+    userInfo: [],
     hasLogin: false,
     shops: [
       {
