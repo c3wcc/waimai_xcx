@@ -4,7 +4,7 @@
 
 <view class="container">
   <view class="header {{scrollDown?'scrolled':''}}">
-    <view class="location ellipsis" bindtap="toNearby">
+    <view class="location ellipsis" bindtap="location">
       <image class="icon" src="/images/index/icon_location.png" /> {{address}}
     </view>
     <view class="search" bindtap="tapSearch">

@@ -1,4 +1,5 @@
-// page/go/index.js
+var app = getApp();
+
 Page({
 
   /**
@@ -12,7 +13,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var href = "https://account.c3w.cc/index/check?openid=" + app.globalData.openid;
+    this.setData({
+      href: "https://account.c3w.cc/index/check?openid=" + app.globalData.userInfo.openid
+    })
   },
 
   /**
