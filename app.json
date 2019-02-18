@@ -1,5 +1,4 @@
 {
-	"debug": true,
 	"pages": [
     "page/loading/loading",
 		"page/index/index",
@@ -7,7 +6,6 @@
     "page/list/list",
 		"page/shop/shop",
 		"page/mine/mine",
-
     "page/ad/ad"
 	],
 	"window": {
