@@ -13,4 +13,5 @@ module.exports = {
   UpdatePhoneUrl: ApiRootUrl + 'updatephone',//更新手机号
   GetUserUrl: ApiRootUrl + 'getuser',//获取当前用户
   GetCertifyUrl: ApiRootUrl + 'getcertify',//获取当前用户认证信息
+  GetShopList: ApiRootUrl + 'waimai/store_list'
 }

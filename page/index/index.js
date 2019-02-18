@@ -129,7 +129,7 @@ Page({
       // }
       // ]
     ],
-    shops: app.globalData.shops,
+    shop_list: [],
     leftpicture: "/images/index/leftpicture.png",
     righttoppicture: "/images/index/right-toppicture.png",
     rightbottomleft: "/images/index/right-bottom-left.png",
@@ -145,7 +145,11 @@ Page({
         })
       }
     })
-  
+    // util.request(api.UpdatePhoneUrl).then(res => {
+    //   if (res.code == 200) {
+
+    //   }
+    // })
   },
   onShow: function () { },
   onScroll: function (e) {
