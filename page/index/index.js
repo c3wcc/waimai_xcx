@@ -12,7 +12,7 @@ Page({
     address: '选择学校…',
     banners: [{
       id: 3,
-      img: '/images/swipbackground.png',
+      img: '/images/swipbackground.jpg',
       url: '',
       name: '百亿巨惠任你抢'
     },
@@ -33,13 +33,13 @@ Page({
       [{
         id: 1,
         img: '/images/index/icon_1.jpg',
-        name: '美食',
+        name: '美食外卖',
         url: ''
       },
       {
         id: 2,
         img: '/images/index/icon_2.jpg',
-        name: '超市',
+        name: '校友自营',
         url: ''
       },
       {
@@ -79,55 +79,55 @@ Page({
         url: ''
       }
       ],
-      [{
-        id: 9,
-        img: '/images/index/icon_9.jpg',
-        name: '新商家',
-        url: ''
-      },
-      {
-        id: 10,
-        img: '/images/index/icon_10.jpg',
-        name: '免配送费',
-        url: ''
-      },
-      {
-        id: 11,
-        img: '/images/index/icon_11.jpg',
-        name: '鲜花蛋糕',
-        url: ''
-      },
-      {
-        id: 12,
-        img: '/images/index/icon_12.jpg',
-        name: '名气餐厅',
-        url: ''
-      },
-      {
-        id: 13,
-        img: '/images/index/icon_13.jpg',
-        name: '异国料理',
-        url: ''
-      },
-      {
-        id: 14,
-        img: '/images/index/icon_14.jpg',
-        name: '家常菜',
-        url: ''
-      },
-      {
-        id: 15,
-        img: '/images/index/icon_15.jpg',
-        name: '能量西餐',
-        url: ''
-      },
-      {
-        id: 16,
-        img: '/images/index/icon_16.jpg',
-        name: '无辣不欢',
-        url: ''
-      }
-      ]
+      // [{
+      //   id: 9,
+      //   img: '/images/index/icon_9.jpg',
+      //   name: '新商家',
+      //   url: ''
+      // },
+      // {
+      //   id: 10,
+      //   img: '/images/index/icon_10.jpg',
+      //   name: '免配送费',
+      //   url: ''
+      // },
+      // {
+      //   id: 11,
+      //   img: '/images/index/icon_11.jpg',
+      //   name: '鲜花蛋糕',
+      //   url: ''
+      // },
+      // {
+      //   id: 12,
+      //   img: '/images/index/icon_12.jpg',
+      //   name: '名气餐厅',
+      //   url: ''
+      // },
+      // {
+      //   id: 13,
+      //   img: '/images/index/icon_13.jpg',
+      //   name: '异国料理',
+      //   url: ''
+      // },
+      // {
+      //   id: 14,
+      //   img: '/images/index/icon_14.jpg',
+      //   name: '家常菜',
+      //   url: ''
+      // },
+      // {
+      //   id: 15,
+      //   img: '/images/index/icon_15.jpg',
+      //   name: '能量西餐',
+      //   url: ''
+      // },
+      // {
+      //   id: 16,
+      //   img: '/images/index/icon_16.jpg',
+      //   name: '无辣不欢',
+      //   url: ''
+      // }
+      // ]
     ],
     shops: app.globalData.shops,
     leftpicture: "/images/index/leftpicture.png",

@@ -10,7 +10,7 @@
     <view class="search" bindtap="tapSearch">
       <image class="icon" src="/images/index/icon_search.png" />
       <i class="fa fa-home"></i>
-      烤鸭
+      肉夹馍
     </view>
   </view>
 
