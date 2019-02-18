@@ -9,7 +9,7 @@ Page({
     phone: '',
     time: '获取验证码',
     filterId: 1,
-    address: '定位中…',
+    address: '选择学校…',
     banners: [{
       id: 3,
       img: '/images/swipbackground.png',
@@ -145,8 +145,6 @@ Page({
         })
       }
     })
-
-   
   
   },
   onShow: function () { },
@@ -317,4 +315,9 @@ Page({
       });
     }
   },
+  location:function(){
+    wx.navigateTo({
+      url: '../school/change',
+    })
+  }
 });

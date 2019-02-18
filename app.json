@@ -7,7 +7,8 @@
     "page/mine/mine",
     "page/ad/ad",
     "page/loading/loading",
-    "page/go/index"
+    "page/go/index",
+    "page/school/change"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5801",
