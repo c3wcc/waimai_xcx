@@ -15,7 +15,10 @@
     </view>
     <view class="policy">绑定即视为同意《网络服务协议》和《隐私政策》</view>
     <button form-type="submit" class="ok">登录</button>
-    <button class='bindphone' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">微信登录</button>
+    <view style="color:#aeaeae;text-align:center;font-size:28rpx;margin-top:30rpx">
+    <text style='color:#e5e5e5;'>———</text> 其他登录方式 <text style='color:#e5e5e5;'>———</text>
+    </view>  
+    <button class='bindphone' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"></button>
 </form>
 
 </view>
