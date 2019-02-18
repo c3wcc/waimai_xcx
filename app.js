@@ -1,59 +1,27 @@
 var server = require('./utils/server');
 App({
   onLaunch: function () {
-
-    var self = this;
-    var rd_session = wx.getStorageSync('rd_session');
-    if (!rd_session) {
-      self.login();
-    } else {
-      wx.checkSession({
-        success: function () {
-          // 登录态未过期
-          self.rd_session = rd_session;
-          self.getUserInfo();
-        },
-        fail: function () {
-          //登录态过期
-          self.login();
-        }
-      })
-    }
   },
-  rd_session: null,
-  login: function () {
+
+  login: function (cb) {
     var self = this;
     wx.login({
       success: function (res) {
         server.getJSON('/api/user/login_by_code', { code: res.code }, function (res) {
           console.log(res.data);
-
-          // self.rd_session = res.data.data.rd_session;
-          // self.globalData.hasLogin = true;
-          // wx.setStorageSync('rd_session', self.rd_session);
-          // self.getUserInfo();
+          wx.setStorageSync('token', res.data.data.token);
+          self.globalData.userInfo = res.data.data;
           
+          cb && cb(res.data.data)
+
         });
       }
     });
   },
-  getUserInfo: function () {
-    var self = this;
-    wx.getUserInfo({
-      success: function (res) {
-        self.globalData.userInfo = res.userInfo;
-        server.getJSON('/WxAppApi/checkSignature', {
-          rd_session: self.rd_session,
-          result: res
-        }, function (res) {
-          if (res.data.errorcode) {
-            // TODO:验证有误处理
-          }
-        });
-      }
-    });
-  },
+ 
   globalData: {
+    openid:null,
+    userInfo:[],
     hasLogin: false,
     shops: [
       {

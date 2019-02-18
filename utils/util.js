@@ -34,13 +34,13 @@ function toUrl(url, params) {
 /**
  * 封封微信的的request
  */
-function request(url, data = {}, method = "GET", redirecturl ='/pages/loading/loading') {
+function request(url, data = {}, method = "GET", redirecturl ='/page/loading/loading') {
   return new Promise(function (resolve, reject) {
     var token = wx.getStorageSync('token');
     if(!token)
     {
       wx.navigateTo({
-        url: '/pages/loading/loading',
+        url: '/page/loading/loading',
       })
       return;
     }
