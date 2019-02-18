@@ -1,7 +1,13 @@
 var app = getApp();
 var server = require('../../utils/server');
+const util = require('../../utils/util.js');
+const api = require('../../config/api.js');
 Page({
   data: {
+    showModal: true,
+    currentTime: 60,
+    phone:'',
+    time: '获取验证码',
     filterId: 1,
     address: '定位中…',
     banners: [{
@@ -212,5 +218,62 @@ Page({
       content: '您点击了“' + name + '”活动链接，活动页面暂未完成！',
       showCancel: false
     });
-  }
+  },
+  //获取验证码按钮
+  getCode: function () {
+    var that = this;
+    var currentTime = that.data.currentTime
+    let interval = setInterval(function () {
+      currentTime--;
+      that.setData({
+        time: currentTime + '秒后重发'
+      })
+      if (currentTime <= 0) {
+        clearInterval(interval)
+        that.setData({
+          time: '重新发送',
+          currentTime: 60,
+          getingCode: false
+        })
+      }
+    }, 1000)
+    return interval;
+  },
+  //api获取验证码
+  getVerificationCode() {
+    var that = this
+    if (that.data.phone == '') {
+      util.showErrorToast('请输入手机号');
+      return;
+    } else {
+      var interval = that.getCode();
+      that.setData({
+        getingCode: true
+      })
+      wx.request({
+        url: api.GetPhoneCodeUrl,
+        method: 'get',
+        dataType  : 'json',
+        data: {
+          'phone': that.data.phone
+        },
+        success: function (res) {
+          if (res.data != 'OK') {
+            util.showErrorToast(res.data);
+            clearInterval(interval)
+            that.setData({
+              getingCode: false,
+              time: '获取验证码'
+            })
+          }
+        }
+      });
+    }
+  },
+  bindKeyInput: function (e) {
+    this.setData({
+      phone: e.detail.value
+    })
+    console.log(e.detail.value);
+  },
 });

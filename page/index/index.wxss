@@ -1,3 +1,4 @@
+@import '/page/common/auth_phone.wxss';
 page {
 	height: 100%;
 }

@@ -1,3 +1,7 @@
+
+<include src="/page/common/auth_phone.wxml" />
+
+
 <view class="container">
   <view class="header {{scrollDown?'scrolled':''}}">
     <view class="location ellipsis" bindtap="toNearby">
