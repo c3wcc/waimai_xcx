@@ -62,6 +62,7 @@
   height: 50rpx;
   line-height: 50rpx;
   float: right;
+  border-radius: 50px;
 }
 
 .policy {
@@ -94,15 +95,3 @@
   height: 70rpx;
   line-height: 70rpx;
 }
-
-/* .bindphone {
-  width: 75%;
-  background-color: #00b26a;
-  text-align: center;
-  color: white;
-  margin:  40rpx auto 10px auto;
-  border-radius: 50px;
-  font-size: 34rpx;
-  height:70rpx;
-  line-height:70rpx;
-} */
