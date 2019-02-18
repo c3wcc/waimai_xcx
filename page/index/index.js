@@ -296,27 +296,25 @@ Page({
           showModal: false
         })
         app.globalData.phone = phone
-        if (that.data.backurl != '') {
-          wx.navigateTo({
-            url: that.data.backurl,
-          })
-        }
       } else {
         util.showErrorToast('登录失败，稍后重试');
       }
     });
-    //保存手机后，再次请求
-    if (scene) {
-      //存起来
-      var scene = app.globalData.share_scene;
-      //发起请求
-      util.request(api.BindShareScene + '?id=' + scene).then(function (res) {
-        wx.showToast({
-          title: '来自 ' + res.data.nickname + ' 的分享',
-          icon: 'none'
-        })
-      })
+  },
+  //获取微信手机号码
+  getPhoneNumber: function (e) {
+    var that = this
+    if (e.detail.errMsg == 'getPhoneNumber:ok') {
+      util.request(api.DecryDataUrl, {
+        'iv': e.detail.iv,
+        'encryptData': e.detail.encryptedData
+      }, 'POST').then(function (res) {
+        if (res.status == 'success' && res.code == 200) {
+          that.savePhone(res.data.phoneNumber);
+        } else {
+          util.showErrorToast(res);
+        }
+      });
     }
-    //请求结束
   },
 });
